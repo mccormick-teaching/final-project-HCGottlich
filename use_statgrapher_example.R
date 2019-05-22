@@ -12,6 +12,8 @@ source(paste0(repo_path, "utils/statgrapher.R"))
 # aggregate and graph
 
 data_root <- "C:/Users/Harri/Desktop/repos/data_for_csss_proj/"
+#' [***********^^ Set to own!**********]
+
 data <- fread(paste0(data_root, "wiki-talk-temporal.txt"))
 
 # aggregator function
