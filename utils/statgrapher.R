@@ -47,9 +47,6 @@ graph_stat_grapher <- function(data_list, g_fn, fn_name = NA, graph = FALSE, wk_
 
 boxplot_node_dter <- function(data_list, fn, graph = FALSE){
   
-  data_list <- graphs_16wks
-  fn <- "degree"
-  
   data <- lapply(data_list, eval(fn))
   pad_val <- max(unlist(lapply(data, length)))
   

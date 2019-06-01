@@ -20,7 +20,7 @@ data <- fread(paste0(data_root, "wiki-talk-temporal.txt"))
 graphs_16wks         <- aggregator(data_in = data, num_weeks = 16, ret_igraphs = TRUE)
 
 # example 1 -- graph statistics: aggregate over 16 weeks; graph transitvity
-graph_16wks_trans_df <- graph_stat_grapher(data_list = graphs_16wks, g_fn = "transitivity", averaged = FALSE, graph = TRUE)
+graph_16wks_trans_df <- graph_stat_grapher(data_list = graphs_16wks, g_fn = "transitivity",  graph = TRUE, wk_agg = "16")
 
 # example 2 -- node statistics boxplot: aggregate over 16 weeks, take degree of each node, graph boxplot of each graph
 
